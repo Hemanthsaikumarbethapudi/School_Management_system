@@ -1,11 +1,4 @@
-
-# Project Title
-
-A brief description of what this project does and who it's for
-
-
 # School Management System
-
 The School Management System is a simple Java application built using Object-Oriented Programming (OOP) principles. It manages basic operations such as tracking students, teachers, and school funds. This project is an educational exercise to demonstrate the practical implementation of OOP concepts in Java.
 
 # Features
