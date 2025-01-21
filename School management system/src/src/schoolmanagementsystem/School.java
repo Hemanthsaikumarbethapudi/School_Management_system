@@ -3,41 +3,46 @@ package schoolmanagementsystem;
 import java.util.List;
 
 public class School {
-    private List<Teacher> teacher;
-    private List<Student> student;
-    private int totalMoneyearned;
-    private int totalMoneyspent;
+    private List<Teacher> teachers;
+    private List<Student> students;
+    private static int totalMoneyearned;
+    private static  int totalMoneyspent;
 
-    public void School(List<Teacher> teacher,List<Student> student){
-        this.teacher=teacher;
-        this.student=student;
+    public  School(List<Teacher> teachers,List<Student> students){
+        this.teachers=teachers;
+        this.students=students;
         totalMoneyearned=0;
         totalMoneyspent=0;
 
     }
        public List<Teacher> getTeacher(){
-        return teacher;
+        return teachers;
        }
-       public void setTeacher(List<Teacher> teacher){
-        this.teacher=teacher;
+       public void addTeacher(Teacher teacher){
+            teachers.add(teacher);
        }
        public  List<Student> getStudent(){
-        return student;
+        return students;
        }
-       public void setStudent(List<Student> student){
-        this.student=student;
+       public void addStudent(Student student){
+        students.add(student);
        }
+
+
       public int getTotalMoneyearned(){
         return totalMoneyearned;
       }
-      public void setTotalMoneyearned(int totalMoneyearned){
-        this.totalMoneyearned=totalMoneyearned;
+      public static void updateTotalMoneyearned(int Moneyearned)
+      {
+        totalMoneyearned+=Moneyearned;
+
       }
       public int getTotalMoneyspent(){
         return totalMoneyspent;
       }
-      public void setTotalMoneyspent(int totalMoneyspent){
-        this.totalMoneyspent=totalMoneyspent;
+      public static void updateTotalMoneyspent(int moneyspent){
+        totalMoneyspent-=moneyspent;
+
       }
 
 }
