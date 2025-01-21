@@ -38,6 +38,12 @@ Methods: Add students and teachers, update school funds.
 
 Contains the main method to test the application and demonstrate its functionalities.
 
+Technologies Used
+
+Programming Language: Java
+
+Collections: ArrayList for managing students and teachers.
+
 Hemanth Sai Kumar Bethapudi
 
 Happy coding!
